@@ -16,7 +16,6 @@ nav{
 
 .navbar-toggler{
     background-color: #d6c8b3;
-    
 }
 
 .navbar-toggler:active{
@@ -42,16 +41,3 @@ li:active{
     position: relative;
     top: 2px;
 }
-
-p{
-    font-family: 'open sans', sans-serif;
-    font-weight: 700;
-}
-
-a i{
-    font-size: 20px;
-    color: #153448;
-}
-
-
-
