@@ -41,3 +41,37 @@ li:active{
     position: relative;
     top: 2px;
 }
+
+.Baslik{
+    display: inline-flex;
+    width: 100%;
+}
+
+.logo{
+    width: 85px;
+    height: 105px;    
+}
+
+.Baslik-icerik{    
+    margin-left: 40%;    
+}
+
+p{
+    font-family: 'open sans', sans-serif;
+    font-weight: 700;
+    
+}
+
+.std-resimler img{
+    display: block;
+    margin: 5%;
+    height: 250px;
+    width: 450px;
+    
+}
+
+#kaza-resmi{
+    width: 100%;
+    margin-top: 25%;
+}
+
