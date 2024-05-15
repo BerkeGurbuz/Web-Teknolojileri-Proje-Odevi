@@ -52,3 +52,16 @@ li:active{
 img{
     border: black 2px solid;
 }
+.kutu{
+    width: 60%;
+    margin: auto;
+    margin-top: 5%;     
+    padding: 5%;
+    border-radius: 50px;
+    border: #153448 2px solid;
+    background-color: #d6c8b3;
+    box-shadow: black 5px 5px 40px;
+
+}
+
+
