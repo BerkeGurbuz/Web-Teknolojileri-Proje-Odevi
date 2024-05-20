@@ -43,29 +43,33 @@
       </nav>
 
       <div class="kutu">
-        <form action="">
-          <div class="mb-3">
+        <form action="İletişim.php" method="get">
+          <div class="my-3">
             <label for="Ad" class="form-label">Ad</label>
-            <input type="text" class="form-control" id="Ad" placeholder="Adınızı Giriniz">
+            <input type="text" class="form-control" id="Ad" name="Ad" placeholder="Adınızı Giriniz">
           </div>
-          <div class="mb-3">
+          <div class="my-3">
             <label for="Soyad" class="form-label">Soyad</label>
-            <input type="text" class="form-control" id="Soyad" placeholder="Soyadınızı Giriniz">
+            <input type="text" class="form-control" id="Soyad" name="Soyad" placeholder="Soyadınızı Giriniz">
           </div>
-          <div class="mb-3">
+          <div class="my-3">
             <label for="Telefon" class="form-label">Telefon</label>
-            <input type="text" class="form-control" id="Telefon" placeholder="Numaranızı Giriniz">
+            <input type="text" class="form-control" id="Telefon" name="Telefon" placeholder="Numaranızı Giriniz">
           </div>
-          <div class="mb-3">
+          <div class="my-3">
             <label for="email" class="form-label">Email Adres</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <input type="email" class="form-control" id="email" name="Email" placeholder="name@example.com">
           </div>
-          <div class="mb-3">
+          <div class="my-3">
             <label for="mesaj" class="form-label">Mesaj</label>
-            <textarea class="form-control" id="mesaj" rows="3" placeholder="Metin Giriniz..."></textarea>
+            <textarea class="form-control" id="mesaj" rows="3" name="Mesaj" placeholder="Metin Giriniz..."></textarea>
+          </div>
+          <div class="my-3">
+            <button type="submit">Gönder</button>
           </div>
         </form>
       </div>
+      
 
 
 

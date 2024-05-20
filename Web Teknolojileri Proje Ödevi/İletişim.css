@@ -64,4 +64,17 @@ img{
 
 }
 
+button{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+}
+
+button:active{
+    box-shadow: 2px 2px 0px black;
+    position: relative;
+    top: 2px;
+}
+
 
