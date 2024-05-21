@@ -19,7 +19,7 @@
             </button>      
           <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link active " aria-current="page" href="Hakkımda.html">Hakkımda</a>
               </li>              
               <li class="nav-item">
@@ -46,26 +46,26 @@
         <form action="İletişim.php" method="get">
           <div class="my-3">
             <label for="Ad" class="form-label">Ad</label>
-            <input type="text" class="form-control" id="Ad" name="Ad" placeholder="Adınızı Giriniz">
+            <input type="text" class="form-control" id="Ad" required name="Ad" placeholder="Adınızı Giriniz">
           </div>
           <div class="my-3">
             <label for="Soyad" class="form-label">Soyad</label>
-            <input type="text" class="form-control" id="Soyad" name="Soyad" placeholder="Soyadınızı Giriniz">
+            <input type="text" class="form-control" id="Soyad" required name="Soyad" placeholder="Soyadınızı Giriniz">
           </div>
           <div class="my-3">
             <label for="Telefon" class="form-label">Telefon</label>
-            <input type="text" class="form-control" id="Telefon" name="Telefon" placeholder="Numaranızı Giriniz">
+            <input type="text" class="form-control" id="Telefon" required name="Telefon" placeholder="Numaranızı Giriniz">
           </div>
           <div class="my-3">
             <label for="email" class="form-label">Email Adres</label>
-            <input type="email" class="form-control" id="email" name="Email" placeholder="name@example.com">
+            <input type="email" class="form-control" id="email" required name="Email" placeholder="name@example.com">
           </div>
           <div class="my-3">
             <label for="mesaj" class="form-label">Mesaj</label>
-            <textarea class="form-control" id="mesaj" rows="3" name="Mesaj" placeholder="Metin Giriniz..."></textarea>
+            <textarea class="form-control" id="mesaj" required rows="3" name="Mesaj" placeholder="Metin Giriniz..."></textarea>
           </div>
           <div class="my-3">
-            <button type="submit">Gönder</button>
+            <button type="submit" class="btn btn-primary ">Gönder</button>
           </div>
         </form>
       </div>

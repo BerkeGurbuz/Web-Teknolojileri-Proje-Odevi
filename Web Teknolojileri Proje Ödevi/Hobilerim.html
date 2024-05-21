@@ -74,6 +74,12 @@
         <div class="row my-5 text-center">
           <div class="col-md-6">
             <h1 class="mb-4">Futbol İzlemek</h1>
+            <p>Futbol izlemek, benim için büyük bir tutku ve heyecan kaynağıdır. Galatasaray taraftarı olarak, lig maçlarını 
+              ve Şampiyonlar Ligi karşılaşmalarını büyük bir heyecanla takip ediyorum. Maç günlerinde arkadaşlarla toplanıp 
+              maçları birlikte izlemek, bu deneyimi daha da özel kılıyor. Ayrıca, memleketim Samsun'un takımı olan Samsunspor'un 
+              maçlarını da izlemekten keyif alıyorum. Özellikle birkaç defa playoff maçlarını stadyumda canlı olarak izleme 
+              fırsatım oldu, bu da unutulmaz bir deneyimdi. Futbolun heyecanı, coşkusu ve birleştirici gücü, maçları izlerken 
+              hissettiğim en önemli duygular arasında yer alıyor.</p>
 
           </div>
           <div class="col-md-6"><img src="resimler/person-holding-remote-in-front-of-flat-screen-bb21wi001wg.webp" alt=""></div>
@@ -83,27 +89,7 @@
       </div>
 
 
-      <script>
-        document.getElementById("apiBtn").addEventListener("click", function() {
-        var data = null;
-
-        var xhr = new XMLHttpRequest();
-        xhr.withCredentials = true;
-
-        xhr.addEventListener("readystatechange", function () {
-          if (this.readyState === this.DONE) {
-          console.log(this.responseText);
-          }
-          });
-
-        xhr.open("GET", "https://api.collectapi.com/sport/leaguesList");
-        xhr.setRequestHeader("content-type", "lig.json");
-        xhr.setRequestHeader("authorization", "");
-
-        xhr.send(data);
-
-        });
-      </script>
+      
 
 
     <script src="https://kit.fontawesome.com/14b7b9b4e8.js" crossorigin="anonymous"></script>
