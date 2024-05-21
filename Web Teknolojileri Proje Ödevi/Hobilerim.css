@@ -43,62 +43,9 @@ li:active {
 
 h1 {
   font-family: "Poppins", sans-serif;
-}
-
-.div1 {
-  margin-top: 10%;
-  padding-left: 10%;
-  height: 300px;
-}
-.div2 {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  height: 300px;
-}
-
-.div3 {
-  margin-left: 10%;
-  display: inline-block;
-}
-
-.div2 img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: black solid 3px;
-  box-shadow: 0px 0px 10px black;
-  margin-left: 15%;
-}
-
-.div3 img {
-  margin: auto;
-}
-
-#instagram {
-  color: #153448;
-  font-size: 40px;
-  margin-right: 1%;
-}
-
-#gmail {
-  color: #153448;
-  font-size: 40px;
-  margin-right: 1%;
-}
-
-#github {
-  color: #153448;
-  font-size: 40px;
-  margin-right: 1%;
-}
-
-#linkedin {
-  color: #153448;
-  font-size: 40px;
-}
-
-.div3 i:hover {
-  transform: scale(0.9);
+  text-shadow: 0px 0px 1px black;
+  text-align: center;
+  margin-top: 2%;
 }
 
 p {
@@ -106,16 +53,7 @@ p {
   font-weight: 700;
 }
 
-.div1 p {
-  margin-bottom: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .div2 {
-    margin: 0 20%;
-  }
-
-  .div3 {
-    margin: 20% 43%;
-  }
+img {
+  height: 100%;
+  width: 100%;
 }
