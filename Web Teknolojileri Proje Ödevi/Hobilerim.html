@@ -21,7 +21,10 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active " aria-current="page" href="Hakkımda.html">Hakkımda</a>
-              </li>              
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="Özgeçmiş.html">Özgeçmiş</a>
+              </li>            
               <li class="nav-item">
                 <a class="nav-link" href="Şehrim.html">Şehrim</a>
               </li>
@@ -79,17 +82,42 @@
               maçları birlikte izlemek, bu deneyimi daha da özel kılıyor. Ayrıca, memleketim Samsun'un takımı olan Samsunspor'un 
               maçlarını da izlemekten keyif alıyorum. Özellikle birkaç defa playoff maçlarını stadyumda canlı olarak izleme 
               fırsatım oldu, bu da unutulmaz bir deneyimdi. Futbolun heyecanı, coşkusu ve birleştirici gücü, maçları izlerken 
-              hissettiğim en önemli duygular arasında yer alıyor.</p>
-
-          </div>
-          <div class="col-md-6"><img src="resimler/person-holding-remote-in-front-of-flat-screen-bb21wi001wg.webp" alt=""></div>
-          <button id="apiBtn" class="btn btn-primary">API'yi Göster</button>
-          
+              hissettiğim en önemli duygular arasında yer alıyor.</p>              
+        </div>
+        <div class="col-md-6">
+          <img src="resimler/person-holding-remote-in-front-of-flat-screen-bb21wi001wg.webp" alt="">
         </div>
       </div>
+      <hr>
 
+      <div class="row my-5 text-center">
+        <div class="col-md-6">
+          <h1 class="mb-4">Kitap Okumak</h1>
+          <p>Kitaplar benim için sadece kağıt ve mürekkepten ibaret değil, aynı zamanda birer kapı açıcı, birer yol gösterici, 
+            birer dost. Sayfalar arasında kaybolmak, farklı dünyalara adım atmak, yeni insanlar tanımak beni her zaman 
+            heyecanlandırmıştır. Her kitap, beni biraz daha zenginleştirir, biraz daha derin düşünmeme sebep olur ve hayal 
+            gücümü genişletir. Kitaplarla olan ilişkim, sadece bilgi edinmekle kalmaz, aynı zamanda ruhumu besler, duygusal 
+            olarak da doyurur. Bir kitapla başladığım yolculuk, genellikle diğer kitapların kapılarını aralamama sebep olur 
+            ve bu süreç hiçbir zaman bitmek bilmez. Her kitap, benim için yeni bir maceradır ve bu maceraları paylaşmak, 
+            en büyük keyiflerimden biridir.</p>   
+            <input type="text" id="searchInput" placeholder="Kitap adı veya yazarı giriniz">
+        <button onclick="searchBooks()">Ara</button>
+        <div id="results"></div>
+
+      </div>
+      <div class="col-md-6">
+        <img style="height: 300px;" src="resimler/istockphoto-1373105718-612x612.jpg" alt="">
+
+        
+      </div>
+    </div>
 
       
+
+      
+
+
+      <script src="script.js"></script>
 
 
     <script src="https://kit.fontawesome.com/14b7b9b4e8.js" crossorigin="anonymous"></script>
