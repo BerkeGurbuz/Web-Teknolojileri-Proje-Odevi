@@ -1,25 +1,17 @@
 <?php
-$valid_credentials = array(
-    "g231210390@sakarya.edu.tr" => "g231210390",
-    
-);
+// Kullanıcı bilgilerini burada tanımlayın (Örnek)
+$valid_username = 'g231210390@sakarya.edu.tr';
+$valid_password = 'g231210390';
 
-$email = $_POST['email'];
-$password = $_POST['password'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['email'];
+    $password = $_POST['password'];
 
-if (isset($valid_credentials[$email]) == $email && $valid_credentials[$email] == $password) {
-    echo "<div class='welcome-message background-div'> HOŞGELDİNİZ! " . $password . "</div>";
-    echo "<script type='text/javascript'>
-            setTimeout(function(){
-                window.location.href = 'login.html';
-            }, 10000);
-          </script>";
-} else {
-    echo "<div class='error-message background-div'>KULLANICI ADI VEYA ŞİFRE HATALI!</div>";
-    echo "<script type='text/javascript'>
-            setTimeout(function(){
-                window.location.href = '../login.html';
-            }, 5000);
-          </script>";
+    // Kullanıcı bilgilerini kontrol edin
+    if ($username === $valid_username && $password === $valid_password) {
+        echo 'Hoş geldiniz, ' . htmlspecialchars($username) . '!';
+    } else {
+        echo 'Hatalı giriş';
+    }
 }
 ?>

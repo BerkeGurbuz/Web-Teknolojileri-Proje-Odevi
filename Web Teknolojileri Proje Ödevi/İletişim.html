@@ -20,7 +20,7 @@
           <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
             <ul class="navbar-nav">
               <li class="nav-item ">
-                <a class="nav-link active " aria-current="page" href="Hakkımda.html">Hakkımda</a>
+                <a class="nav-link active " aria-current="page" href="index.html">Hakkımda</a>
               </li>  
               <li class="nav-item">
                 <a class="nav-link" href="Özgeçmiş.html">Özgeçmiş</a>
@@ -63,79 +63,15 @@
           </div>
           <div class="my-3">
             <button type="submit" class="btn btn-primary ">Gönder</button>
-            <button type="submit" class="btn btn-primary" onclick="gecerliForm()">Gönder</button>
           </div>
         </form>
       </div>
-      
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script>
-        new Vue({
-  el: '#form1',
-  data: {
-    vueAd: '',
-    vueMail: '',
-    vueMesaj: ''
-  },
-  methods: {
-    formTemizle() {
-      this.vueAd = '';
-      this.vueMail = '';
-      this.vueMesaj = '';
-    }
-  }
-});
-    </script>
 
-    <script>function gecerliForm() {
+      <footer class="mt-4">
+        <p class="text-center">Web Teknolojileri Projesi &copy; 2024 Berke Gürbüz</p>
+      </footer>
       
-      let hatalar = [];   
-      let ad = document.getElementById('ad').value;
-      let soyad = document.getElementById('soyad').value;
-      let email = document.getElementById('email').value;  
-       
-      if (!ad) {
-          hatalar.push("Adınızı girmeyi unuttunuz!");
-      }      
-      if (!email) {
-          hatalar.push("E-posta adresinizi girmeyi unuttunuz!");
-      } else if (!gecerliEmail(email)) {
-          hatalar.push("Geçerli bir e-posta adresi giriniz!");
-      }      
-      if (!mesaj) {
-        hatalar.push("Mesajınızı girmeyi unuttunuz!");
-      } 
-  
-      
-      let hataMesaji = document.getElementById('hataMesaji');
-      let hataListe = document.getElementById('hataListesi');
-      hataListe.innerHTML = "";
-  
-      if (hatalar.length > 0) {
-  
-          hatalar.forEach(function(error) {
-              let li = document.createElement('li');
-              li.textContent = error;
-              hataListe.appendChild(li); 
-          });
-          hataMesaji.classList.replace('alert-warning', 'alert-danger'); 
-          hataMesaji.classList.remove('d-none');
-      } else {
-          hataMesaji.innerHTML = ""; 
-          hataMesaji.classList.remove('alert-danger');
-          hataMesaji.classList.remove('alert-warning');
-          hataMesaji.classList.add('alert-success'); 
-          hataMesaji.innerHTML = "Mesajınız başarıyla gönderildi!"; 
-          alert("Form başarılı bir şekilde gönderildi.");
-          document.getElementById('form1').submit(); 
-      }
-  }
-  
-  function gecerliEmail(email) {
-      const karakterler = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\.,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,})$/i;
-      return karakterler.test(String(email).toLowerCase());
-  }
-  </script>
+    
 
 
 
